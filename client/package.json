@@ -24,6 +24,7 @@
     "react-slideshow-image": "^4.0.5",
     "rsuite": "^5.22.1",
     "styled-components": "^5.3.6",
+    "tailwindcss": "^3.2.4",
     "universal-cookie": "^4.0.4",
     "web-vitals": "^3.0.4"
   },
