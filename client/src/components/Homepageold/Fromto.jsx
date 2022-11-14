@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Fromtocss } from "./Fromtocss";
-import '@mobiscroll/react/dist/css/mobiscroll.min.css';
-import { Datepicker, setOptions } from '@mobiscroll/react';
+// import '@mobiscroll/react/dist/css/mobiscroll.min.css';
+// import { Datepicker, setOptions } from '@mobiscroll/react';
 import {IonInput, IonItem} from '@ionic/react'
 // import Calender from 'reac'
 

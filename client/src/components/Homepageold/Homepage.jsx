@@ -1,9 +1,9 @@
 import React from 'react'
-// import styles from './Homepage.module.css'
+import styles from './Homepage.module.css'
 
 function Homepage() {
   return (
-    <div className="">
+    <div className={styles.homepage}>
         
     </div>
   )

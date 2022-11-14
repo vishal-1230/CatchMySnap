@@ -16,7 +16,7 @@ function App() {
         {/* <Route path="/final" exact element={<Final />} /> */}
         {/* <Route path="/payment" exact element={<Payment />} /> */}
         {/* <Route path="/checkout" exact element={<Mytrip />} /> */}
-      {/* </Routes> */}
+      </Routes>
     </div>
   );
 }
