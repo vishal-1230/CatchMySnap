@@ -1,0 +1,151 @@
+.welcome{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    /* background: #fff; */
+    background: #0d0933;
+    background: #fff;
+
+  }
+  
+  #msgslogo{
+    /* height: 400px; */
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 57% 100%, 0% 100%);
+    /* width: auto; */
+    /* position: relative; */
+    /* left: 54%; */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+  }
+  
+  .left{
+    /* background: #ac82ff; */
+    background: #0d0933;
+    background: #fff;
+    height: 100vh;
+    width: 50vw;
+  }
+  
+  .right{
+    height: 100vh;
+    width: 50vw;
+  }
+  
+  /* ######################################################################################################################## */
+  /* ######################################################################################################################## */
+  /* ######################################################################################################################## */
+  
+  
+  .signbox{
+    width: fit-content;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    border-radius: 20px;
+    border-radius: 3px;
+    background: #ac82ff;
+    background: #0d0933;
+    background: #fff;
+    color: white;
+    color: #0d0933;
+    border: #fff 0.1px solid;
+    /* color: white; */
+    /* background: #0d0933; */
+    line-height: 18px;
+}
+  
+  .signbox input{
+    padding: 10px 16px;
+    border-radius: 13px;
+    border-radius: 3px;
+    outline: none;
+    border: #999 0.5px solid;
+    width: 280px;
+    margin-top: 5px;
+  }
+  
+  .signbox button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    background: transparent;
+    border-radius: 10px;
+    border-radius: 3px;
+    border: #fff 3px solid;
+    border: #0d0933 3px solid;
+    border: #1d165c 3px solid;
+    border: #00704A 3px solid;
+    color: #fff;
+    color: #0d0933;
+    color: #1d165c;
+    color: #00704A;
+    outline: none;
+    transition-duration: 150ms;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .signbox button:hover{
+    border: #6c5ce7 3px solid;
+    border: #1d165c 3px solid;
+    border: #00704A 3px solid;
+    color: #6c5ce7;
+    color: white;
+    background-color: #0d0933;
+    background: #1d165c;
+    background-color: #00704A;
+  }
+  .signbox button:active{
+    border: #5844f0 2px solid;
+    border: #0d0933 2px solid;
+    border: #00704A 2px solid;
+    color: #5844f0;
+    color: white;
+    background-color: #0d0933;
+    background: #00704A;
+    font-size: 15px;
+  }
+  .signbox button:disabled{
+    border: rgba(0, 112, 74, 0.7) 3px solid;
+    color: rgba(0, 112, 74, 0.7);
+  }
+  .signbox button:disabled:hover{
+    background: #fff;
+    border: rgba(0, 112, 74, 0.7) 3px solid;
+    color: rgba(0, 112, 74, 0.7);
+    cursor: not-allowed;
+  }
+  
+  .signbox label{
+    padding: 8px;
+    font-weight: 500;
+  }
+  
+  .btmtext{
+    float: right;
+  }
+  
+  .signuplogin{
+    cursor: pointer;
+    color: #0d0933;
+    color: #00704A;
+    font-weight: 600;
+  }
+
+  .authBox h2{
+    font-weight: 600;
+  }
+
+  .refIdInput{
+    display: none;
+  }

@@ -1,5 +1,6 @@
 import {Route, Routes} from 'react-router-dom'
 import Homepage from './components/Homepage/Homepage'
+import LoginSignup from './components/LoginSignup/LoginSignup';
 import {Search} from './components/Search/Search.jsx';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Homepage />} />
         <Route path='/search' element={<Search />} />
+        <Route path='/login' element={<LoginSignup />} />
       </Routes>
       {/* <Routes> */}
         {/* <Route path="/" exact element={<Main />} /> */}
