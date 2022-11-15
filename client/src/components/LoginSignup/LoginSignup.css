@@ -49,8 +49,8 @@
     padding: 50px;
     padding-top: 30px;
     padding-bottom: 45px;
-    border-radius: 20px;
-    border-radius: 3px;
+    /* border-radius: 20px; */
+    /* border-radius: 3px; */
     background: #ac82ff;
     background: #0d0933;
     background: #fff;
@@ -64,8 +64,8 @@
   
   .signbox input{
     padding: 10px 16px;
-    border-radius: 13px;
-    border-radius: 3px;
+    /* border-radius: 13px; */
+    /* border-radius: 3px; */
     outline: none;
     border: #999 0.5px solid;
     width: 280px;
