@@ -98,6 +98,9 @@ const Style = styled.div`
     top: 0;
     /* user-select: none; */
 }
+.search-box{
+  background: 
+}
 `;
 
 export const SearchBox = ({handle}) => {
@@ -1394,6 +1397,10 @@ export const SearchBox = ({handle}) => {
         <button onClick={()=>{
           handleButton()
         }}>SEARCH</button>
+      </div>
+      <div className="search-bar">
+        <input type="text" placeholder="Search an Agency" name="agencyName" id="agencyName" className="agencyName" />
+        <button>Filter</button>
       </div>
       </div>
     </Style>
