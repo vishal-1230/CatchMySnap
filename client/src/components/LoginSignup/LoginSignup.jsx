@@ -2,11 +2,10 @@ import React, {useState} from 'react'
 import './LoginSignup.css'
 import Login from './Login'
 import Signup from './Signup'
-import img from 'D:/MERN/CatchMySnap/client/src/images/wedding.jpg'
-
+import img from './wedding.jpg'
 function LoginSignup() {
 
-    if (document.cookie.charAt(0).toString()=='k'){
+    if (document.cookie.charAt(0).toString()==='k'){
         document.location.href='http://localhost:3000/home'
       }
     
@@ -111,14 +110,14 @@ function LoginSignup() {
 
   return (
     <div className="welcome">
-      <div className="left">
+      <div className="left blur-md">
         <img src={img} alt="" id="msgslogo" />
         <img src="" alt="" />
       </div>
       <div className="right">
-        <div className="signbox">
+        <div className="signbox rounded-xl">
           {signup ? (
-            <div className="authBox">
+            <div className="authBox ">
               <h2>Sign Up</h2><br />
               <form action="http://localhost:8080/signup" method="post" className="signupform">
                 <label htmlFor="name" id="namelbl">
@@ -144,7 +143,7 @@ function LoginSignup() {
                   placeholder="Choose an UserID"
                   autoComplete="off"
                   onChange={onUserChange}
-                  className="form-control lg"
+                  className="form-control lg "
                 />
                 <br />
                 <label
