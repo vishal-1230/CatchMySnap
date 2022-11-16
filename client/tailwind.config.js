@@ -12,7 +12,9 @@ module.exports = {
       'cms-main-red': '#ac0404',
       'cms-deep-red': '#620404',
       'cms-bright': '#b00404',
-      'cms-black':'#050404'
+      'cms-black':'#050404',
+      'white':'#FFFFFF',
+      'grey1':'#e1e1e1'
     },
   },
   plugins: [],

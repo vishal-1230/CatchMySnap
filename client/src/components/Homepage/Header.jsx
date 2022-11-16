@@ -3,12 +3,12 @@ import HotelIcon from "@mui/icons-material/Hotel";
 import HomeWorkIcon from "@mui/icons-material/Instagram";
 import HolidayVillageIcon from "@mui/icons-material/HolidayVillage";
 import TrainIcon from "@mui/icons-material/CorporateFare";
-import DirectionsBusFilledIcon from "@mui/icons-material/Hotel";
-import LocalTaxiIcon from "@mui/icons-material/LocalTaxi";
-import CreditCardIcon from "@mui/icons-material/CreditCard";
-import DownhillSkiingIcon from "@mui/icons-material/DownhillSkiing";
-import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
-import styled from "styled-components";
+// import DirectionsBusFilledIcon from "@mui/icons-material/Hotel";
+// import LocalTaxiIcon from "@mui/icons-material/LocalTaxi";
+// import CreditCardIcon from "@mui/icons-material/CreditCard";
+// import DownhillSkiingIcon from "@mui/icons-material/DownhillSkiing";
+// import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
+// import styled from "styled-components";
 import { useState } from "react";
 import bg from './cms1.png';
 import { Link } from "react-router-dom";
@@ -87,11 +87,12 @@ const Header = () => {
   };
   window.addEventListener("scroll", handleChange);
   return (
+<div className="bg-grey1">
 
-    <div className={nav ? "icondiv" : "disnone"}>
+    <div className="flex justify-center bg-white rounded-xl m-4">
       <div className="imgdiv">
         <Link to="/">
-          <img src={bg} className='w-40 p-6' alt="Logo" />
+          <img src={bg} className='w-44 p-6' alt="Logo" />
         </Link>
       </div>
       <div className="flex justify-center items-center">
@@ -99,38 +100,38 @@ const Header = () => {
           <span className="flex justify-center">
             <FlightIcon></FlightIcon>
           </span>
-          <p className="text-sm">Wedding Photoshoots</p>
+          <p className="text-sm p-2">Wedding Photoshoots</p>
         </div>
         <div className="flex justify-center items-center px-6">
           <span className="flex justify-center">
             <HotelIcon ></HotelIcon>
           </span>
-          <p className="text-sm">Instagram Shoots</p>
+          <p className="text-sm p-2">Instagram Shoots</p>
         </div>
         <div className="flex justify-center items-center px-6">
           <span className="flex justify-center">
             <HomeWorkIcon ></HomeWorkIcon>
           </span>
-          <p className="text-sm">Occassional Shoots</p>
+          <p className="text-sm p-2">Occassional Shoots</p>
         </div>
         <div className="flex justify-center items-center px-6">
           <span className="flex justify-center">
             <HolidayVillageIcon></HolidayVillageIcon>
           </span>
-          <p className="text-sm">Corporate Shoots</p>
+          <p className="text-sm p-2">Corporate Shoots</p>
         </div>
         <div className="flex justify-center items-center px-6">
         <span className="flex justify-center">
             <TrainIcon ></TrainIcon>
           </span>
-          <p className="text-sm">Hotel and Resort Shoots</p>
+          <p className="text-sm p-2">Hotel and Resort Shoots</p>
         </div>
       </div>
       <div className="login">
         {/* <Login handleClick={handlePopup}/> */}
       </div>
     </div>
-
+</div>
   );
 };
 
