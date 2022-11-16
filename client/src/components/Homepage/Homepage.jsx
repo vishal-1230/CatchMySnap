@@ -6,6 +6,9 @@ function Homepage() {
   return (
     <div>
         <Header></Header>
+        <div className="searchArea">
+          <img src='' alt="" />
+        </div>
         <div className="bottom">
 
         </div>
