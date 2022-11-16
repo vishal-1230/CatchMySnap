@@ -9,7 +9,7 @@ const Style = styled.div`
     width: 100%;
     background-color: #27ae60;
     background: #34495e;
-    background: #00704A;
+    background: #0a3d62;
     .topdiv {
     width: 90%;
     height: 60px;
@@ -72,6 +72,7 @@ const Style = styled.div`
         width: 100%;
         background-color: transparent;
         padding: 3px;
+        min-height: 40px;
       }
       option{background-color: #494949}
     }
@@ -85,7 +86,7 @@ const Style = styled.div`
       border: none;
       color: white;
       color: #34495e;
-      color: #00704A;
+      color: #0a3d62;
       cursor: pointer;
       font-weight: 700;
       font-size: 20px;
@@ -98,10 +99,46 @@ const Style = styled.div`
     top: 0;
     /* user-select: none; */
 }
-.search-box{
-  background: 
+.search-bar{
+  background: #3c6382;
+  padding: 20px 30px;
+  position: realtive
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 59px;
 }
-`;
+.agency{
+  outline: none;
+  border-radius: 3px;
+  padding: 8px 14px;
+  position: absolute;
+  right: 200px;
+  // width: 400px;
+  width: 800px;
+  flex-grow: 1;
+}
+.searchAgencyBtn{
+  position: absolute;
+  right: 24px;
+  margin-top: 5px
+  padding: 10px 20px;
+  font-size: 14px;
+  background: white;
+  color: #0a3d63;
+  padding: 9px 18px;
+  border-radius: 3px;
+}
+#date{
+  padding: 10px;
+  height: 40px;
+  width: 100%;
+  background: transparent;
+  font-size: 16px;
+  color: white;
+  outline: none;
+
+}
+  `;
 
 export const SearchBox = ({handle}) => {
 
@@ -1381,8 +1418,7 @@ export const SearchBox = ({handle}) => {
         
         <div className="second">
           <p>Date</p>
-          <IonItem>
-          </IonItem>
+          <input type="date" name="date" id="date" />
           {/* <input type="date" name="date" id="date" /> */}
         </div>
         <div className="second">
@@ -1399,8 +1435,10 @@ export const SearchBox = ({handle}) => {
         }}>SEARCH</button>
       </div>
       <div className="search-bar">
-        <input type="text" placeholder="Search an Agency" name="agencyName" id="agencyName" className="agencyName" />
-        <button>Filter</button>
+        {/* <input type="text" name="agencySearch" id="agencySearch" className="agencySearch" /> */}
+        <input type="search" name="agency" placeholder="Search Agency Manually" id="agency" className="agency" />
+        {/* <input type="submit" value="SEARCH MANUALLY" className="searchAgencyBtn" id="searchAgencyBtn" /> */}
+        <button className="searchAgencyBtn">Filter Out Results</button>
       </div>
       </div>
     </Style>

@@ -3,6 +3,7 @@ import './LoginSignup.css'
 import Login from './Login'
 import Signup from './Signup'
 import img from './wedding.jpg'
+import logo from '../Search/cms2.png'
 function LoginSignup() {
 
     if (document.cookie.charAt(0).toString()==='k'){
@@ -112,13 +113,13 @@ function LoginSignup() {
     <div className="welcome">
       <div className="left blur-md">
         <img src={img} alt="" id="msgslogo" />
-        <img src="" alt="" />
       </div>
+        <img src={logo} alt="" className='logo' style={{width: '220px', height: '70px', position: 'absolute', top: '10px', left: '20px'}} />
       <div className="right">
         <div className="signbox rounded-xl">
           {signup ? (
-            <div className="authBox ">
-              <h2>Sign Up</h2><br />
+            <div className="authBox "><br />
+              <h2 style={{fontSize: '28px', fontWeight: '700'}}>Sign Up</h2><br /><br />
               <form action="http://localhost:8080/signup" method="post" className="signupform">
                 <label htmlFor="name" id="namelbl">
                   Name
@@ -198,8 +199,9 @@ function LoginSignup() {
               <span className="btmtext">Already have an account? <span id="loginbtn" className="signuplogin" onClick={()=>{setsignup(!signup)}}> Login</span></span>
             </div>
           ) : (
-            <div className="authBox">
-              <h2>Login</h2><br />
+            <div className="authBox"><br />
+            <div className="our-login">
+              <h2 style={{fontSize: '28px', fontWeight: '700'}}>Login</h2><br /><br />
               <form action="http://localhost:8080/login" method="post" className="loginform">
                 <label htmlFor="">Username</label><br />
                 <input type="text" name="user" placeholder="UserID" />
@@ -209,7 +211,9 @@ function LoginSignup() {
                 <br /><br /><br /><br />
                 <button className="btnSub">Login</button>
               </form><br />
-              <span className="btmtext">Don't have an account? <span id="signupbtn" className="signuplogin" onClick={()=>{setsignup(!signup)}}> SignUp</span></span>
+              <span className="btmText" style={{float: 'right', marginBottom: '10px'}}><span id="signupbtn" className="signuplogin">Forgot Password?</span></span><br />
+              <span className="btmtext">Don't have an account? <span id="signupbtn" className="signuplogin" onClick={()=>{setsignup(!signup)}}> SignUp</span></span><br />
+            </div>
             </div>
           )}
         </div>

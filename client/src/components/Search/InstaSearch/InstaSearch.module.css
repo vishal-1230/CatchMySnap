@@ -1,0 +1,20 @@
+body{
+    background: #e1e1e1;
+}
+
+.instaHeading{
+    font-weight: 700;
+    font-size: 26px;
+    margin: 28px;
+}
+
+.instaBody{
+    display: flex;
+    margin-left: 40px;
+    /* margin-bottom: 40px; */
+}
+
+.abcd{
+    color: #0000001f;
+    box-shadow: 0 0 6px 0.5px rgba(0, 0, 0, 0.5);
+}

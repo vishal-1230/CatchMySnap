@@ -28,23 +28,33 @@ const Icondivcss = styled.div`
       flex-direction: row;
       justify-content: space-around;
       width: 60%;
+      // margin-left: 10px;
+      margin-top: 8px;
 
       p {
         padding: 0px;
         margin: -6px;
         color: #555454;
+        color: #4f4f4f;
         font-size: 11px;
       }
       span {
-        color: #a3a3a3;
+        color: #4f4f4f;
         cursor: pointer;
       }
       span:hover {
-        color: #2db0fc;
+        color: #0a3d62;
+      }
+      div{
+        cursor: pointer;
       }
       div:hover {
-        color: #2db0fc;
+        color: #0a3d62;
       }
+    }
+    .icons:hover{
+      cursor: pointer;
+      color: #0a3d62;
     }
   }
   .imgdiv {
@@ -65,7 +75,7 @@ left: 150px;
   // margin-top: -28px;  
   margin-left: 20px;
   height: 40px;
-  min-width: 110px
+  min-width: 120px
   }
   .login button{
     margin-left: 30px;
@@ -74,7 +84,7 @@ left: 150px;
     font-size: 13px;
     background: #f39c12;
     background: #34495e;
-    background: #00704A;
+    background: #0a3d62;
     border-radius: 6px;
     border: 0;
     color: white;
@@ -134,8 +144,8 @@ export const Header = () => {
           
         </div>
         <div className="login">
-          <button>LOGIN</button>
-          <button>SIGNUP</button>
+          <Link to='/login'><button>LOGIN</button></Link>
+          <Link to='/login'><button>SIGNUP</button></Link>
         </div>
       </div>
     </Icondivcss>

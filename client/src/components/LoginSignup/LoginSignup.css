@@ -11,22 +11,17 @@
   }
   
   #msgslogo{
-    /* height: 400px; */
+    position: absolute;
+    z-index: -1;
     height: 100vh;
     clip-path: polygon(0 0, 100% 0, 67% 100%, 0% 100%);
-    /* width: auto; */
-    /* position: relative; */
-    /* left: 54%; */
-    /* top: 50%; */
-    /* transform: translate(-50%, -50%); */
-  }
+    }
   
   .left{
-    /* background: #ac82ff; */
     background: #0d0933;
     background: #fff;
     height: 100vh;
-    width: 50vw;
+    width: 70vw;
   }
   
   .right{
@@ -46,6 +41,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    margin-right: 90px;
     padding: 50px;
     padding-top: 30px;
     padding-bottom: 45px;
@@ -86,10 +82,14 @@
     border: #0d0933 3px solid;
     border: #1d165c 3px solid;
     border: #00704A 3px solid;
+    border: #079992 3px solid;
+    border: #0a3d62 3px solid;
     color: #fff;
     color: #0d0933;
     color: #1d165c;
     color: #00704A;
+    color: #079992;
+    color: #0a3d62;
     outline: none;
     transition-duration: 150ms;
     cursor: pointer;
@@ -99,20 +99,26 @@
     border: #6c5ce7 3px solid;
     border: #1d165c 3px solid;
     border: #00704A 3px solid;
+    border: #079992 3px solid;
+    border: #0a3d62 3px solid;
     color: #6c5ce7;
     color: white;
     background-color: #0d0933;
     background: #1d165c;
     background-color: #00704A;
+    background: #009189;
+    background-color: #0a3d62;
   }
   .signbox button:active{
     border: #5844f0 2px solid;
     border: #0d0933 2px solid;
     border: #00704A 2px solid;
+    border: #0a3d62 2px solid;
     color: #5844f0;
     color: white;
     background-color: #0d0933;
     background: #00704A;
+    background: #0a3d62;
     font-size: 15px;
   }
   .signbox button:disabled{
@@ -139,6 +145,7 @@
     cursor: pointer;
     color: #0d0933;
     color: #00704A;
+    color: #0a3d62;
     font-weight: 600;
   }
 
