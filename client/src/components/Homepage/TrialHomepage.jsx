@@ -1,5 +1,16 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import { Icondiv } from "../Homepageold/Icondiv";
+import { Bookingcss } from "../Homepageold/Bookingcss";
+import { Fromto } from "../Homepageold/Fromto";
+import { MultipleSlidesExample, BigSlidesExample } from "../Homepageold/Slidebar";
+import { Bigslide, TripMoney } from "../Homepage/Slidecss";
+import { Bottom } from "../Homepageold/Bottom";
+import { Header } from "../Homepageold/Header";
+import { SmallBottom } from "../Homepageold/SmallBottom";
+import { useState } from "react";
+import { Navbar } from "../Homepageold/Navbar";
+import { Smallbutton } from "../Homepageold/Smallbutton";
 
 function TrialHomepage() {
   return (

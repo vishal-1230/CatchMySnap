@@ -1,10 +1,11 @@
 import React from 'react'
+import Header from './Header'
 // import styles from './Homepage.module.css'
 
 function Homepage() {
   return (
-    <div className="">
-        Home Pagge
+    <div>
+        <Header />
     </div>
   )
 }

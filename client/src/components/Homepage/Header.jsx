@@ -72,7 +72,7 @@ const Icondivcss = styled.div`
 }
 `;
 
-export const Header = () => {
+const Header = () => {
   const handlePopup = () => {
     const popup = document.getElementById("popup");
     popup.classList.toggle("active");
@@ -135,3 +135,6 @@ export const Header = () => {
     </Icondivcss>
   );
 };
+
+
+export default Header

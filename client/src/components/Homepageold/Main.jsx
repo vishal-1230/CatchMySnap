@@ -8,7 +8,7 @@ import { Fromto } from "./Fromto";
 import { MultipleSlidesExample, BigSlidesExample } from "./Slidebar";
 import { Bigslide, TripMoney } from "./Slidecss";
 import { Bottom } from "./Bottom";
-import { Header } from "./Header";
+import { Header } from "../Homepage/Header";
 import { Link } from "react-router-dom";
 import { SmallBottom } from "./SmallBottom";
 import { useState } from "react";
