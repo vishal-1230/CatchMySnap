@@ -1,5 +1,5 @@
 import {Route, Routes} from 'react-router-dom'
-import Homepage from './components/Homepage/TrialHomepage'
+import Homepage from './components/Homepage/Homepage'
 import LoginSignup from './components/LoginSignup/LoginSignup';
 import InstaSearch from './components/Search/InstaSearch/InstaSearch';
 import {Search} from './components/Search/Search.jsx';
