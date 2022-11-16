@@ -17,7 +17,6 @@ export const Bottom = ()=>{
         <p>Ghijklm nopqrs</p>
         <p>Book Tuvwx Yuie yz</p>
         <p>SFXShoots Travelling</p>
-        
 </div>
 <div>
     <h3>CATCHMYSNAP</h3>

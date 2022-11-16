@@ -5,7 +5,13 @@ import Header from './Header'
 function Homepage() {
   return (
     <div>
-        Hello
+        <Header></Header>
+        <div className="bottom">
+
+        </div>
+        <div className="footer">
+          
+        </div>
     </div>
   )
 }
