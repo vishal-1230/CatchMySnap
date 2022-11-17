@@ -124,13 +124,15 @@ const Header = () => {
           </div>
         </div>
         <form id="content">
-          <input type="text" name="input" class="input" id="search-input" />
-          <button type="reset" class="search" id="search-btn"></button>
+          <input type="text" name="input" className="input" id="search-input" />
+          <button type="reset" className="" id="search-btn"></button>
         </form>
         <div className="login">
           {/* <Login handleClick={handlePopup}/> */}
         </div>
-      <button>LOGIN</button>
+        <div className="flex justify-center items-center">
+        <button className="text-cms-deep-red border-2 rounded-2xl w-32 h-10 hover:text-white hover:bg-cms-main-red duration-300">LOGIN</button>
+        </div>
       </div>
     </div>
   );
