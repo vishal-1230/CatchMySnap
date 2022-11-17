@@ -5,14 +5,12 @@ import React, { useState } from 'react'
 import Header from './Header'
 import bg from './cms1.png';
 // import Homepagecss from './homepage.module.css'
-
 // import FlightIcon from "@mui/icons-material/FestivalOutlined";
 // import HomeWorkIcon from "@mui/icons-material/Instagram";
 // import HolidayVillageIcon from "@mui/icons-material/HolidayVillage";
 // import TrainIcon from "@mui/icons-material/CorporateFare";
 // import DirectionsBusFilledIcon from "@mui/icons-material/Hotel";
 // import styles from './Homepage.module.css'
-
 function Homepage() {
   const statesList = [
     "Achalpur",
@@ -1248,6 +1246,21 @@ function Homepage() {
             wedding ?
               <div className="weddingSearch text-center px-14 py-8 m-6 rounded-xl bg-grey1 shadow-dark-grey shadow-2xl max-w-fit ">
                 <div className='p-4 text-lg flex justify-evenly '>
+                
+{/*
+
+
+██╗███╗░░░███╗░█████╗░░██████╗░███████╗  ██╗░░██╗███████╗██████╗░███████╗
+██║████╗░████║██╔══██╗██╔════╝░██╔════╝  ██║░░██║██╔════╝██╔══██╗██╔════╝
+██║██╔████╔██║███████║██║░░██╗░█████╗░░  ███████║█████╗░░██████╔╝█████╗░░
+██║██║╚██╔╝██║██╔══██║██║░░╚██╗██╔══╝░░  ██╔══██║██╔══╝░░██╔══██╗██╔══╝░░
+██║██║░╚═╝░██║██║░░██║╚██████╔╝███████╗  ██║░░██║███████╗██║░░██║███████╗
+╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝░╚═════╝░╚══════╝  ╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚══════╝
+
+*/}
+
+                <img src={Image} alt="" />
+               
                   <div>
                     <input type="radio" name='shooting-days' onClick={() => { setsingle(true) }} />
                     <label className='p-2' htmlFor="a">Single Day Shoot</label>

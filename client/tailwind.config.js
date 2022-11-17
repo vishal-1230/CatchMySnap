@@ -6,7 +6,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+
         'image-cms1': "url('images/bg.jpg')",
+        'wedding': "url('images/undraw_wedding_re_66hj.svg')",
+        'instaram': "url('images/undraw_social_influencer_re_beim.svg')",
+        'occation': "url('images/undraw_festivities_tvvj.svg')",
+        'corporate': "url('images/undraw_interview_re_e5jn.svg')",
+        'hotel': "url('images/undraw_building_re_xfcm.svg')",
       }
     },
     colors: {
