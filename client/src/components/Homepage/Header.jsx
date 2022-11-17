@@ -130,6 +130,7 @@ const Header = () => {
         <div className="login">
           {/* <Login handleClick={handlePopup}/> */}
         </div>
+      <button>LOGIN</button>
       </div>
     </div>
   );
