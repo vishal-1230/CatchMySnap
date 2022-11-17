@@ -1241,46 +1241,53 @@ function Homepage() {
     <div>
       <Header></Header>
       <div className="searchArea">
-        <img className='bgImg w-screen blur-sm' src='https://www.parents.com/thmb/-WzXAufki45bZr9KV9Ptx5r8mZo=/1000x667/filters:fill(auto,1)/shutterstock_286469927-8b82b18bca12479ba7776af8773fed8e.jpg' alt="" />
+        <img className='bgImg w-screen blur-sm absolute -z-10' src='https://www.parents.com/thmb/-WzXAufki45bZr9KV9Ptx5r8mZo=/1000x667/filters:fill(auto,1)/shutterstock_286469927-8b82b18bca12479ba7776af8773fed8e.jpg' alt="" />
 
-        <div className="searchBox">
-          {wedding ? <div className="weddingSearch text-center">
-            <div className='p-4 text-lg flex justify-evenly'>
-              <div>
-                <input type="radio" name='shooting-days' onClick={() => { setsingle(true) }} />
-                <label className='p-2' htmlFor="a">Single Day Shoot</label>
-              </div>
-              <div>
-                <input type="radio" name='shooting-days' onClick={() => { setsingle(false) }} />
-                <label className='p-2' htmlFor="a">Multiple Days Shoot</label>
-              </div>
-            </div>
-            <div className='flex justify-center'>
-              <select name="location" className='w-96 h-10 rounded-lg m-2' id="location">
-                <option value="select">Select Location</option>
-                {statesList.map((i) => {
-                  return <option value={i}>{i}</option>
-                })}
-              </select>
-              <div className='m-2'>
-                <div className='flex items-center justify-center w-96 h-10 rounded-lg bg-white' >
-                  <input className='' type="date" name="date" id="date" />
+        <div className="searchBox flex justify-center">
+          {
+            wedding ?
+              <div className="weddingSearch text-center p-4 m-6 rounded-xl bg-grey1 max-w-fit ">
+                <div className='p-4 text-lg flex justify-evenly '>
+                  <div>
+                    <input type="radio" name='shooting-days' onClick={() => { setsingle(true) }} />
+                    <label className='p-2' htmlFor="a">Single Day Shoot</label>
+                  </div>
+                  <div>
+                    <input type="radio" name='shooting-days' onClick={() => { setsingle(false) }} />
+                    <label className='p-2' htmlFor="a">Multiple Days Shoot</label>
+                  </div>
+                </div>
+                <div className='flex justify-center'>
+                  <select name="location" className='w-96 h-10 rounded-lg m-2' id="location">
+                    <option value="select">
+                      Select Location
+                    </option>
+                    {statesList.map((i) => {
+                      return <option value={i}>{i}</option>
+                    })}
+                  </select>
+                  <div className='m-2'>
+                    <div className='flex items-center justify-center w-96 h-10 rounded-lg bg-white' >
+                      <input className='' type="date" name="date" id="date" />
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" className='text-xl bg-cms-main-red text-white p-2 m-4 w-96 rounded-2xl'>SEARCH</button>
+              </div> : <div className="otherSearch">
+                <select name="location" id="location">
+                  <option value="select">Select Location</option>
+                  {statesList.map((i) => {
+                    return <option value={i}>{i}</option>
+                  })}
+                </select>
+                <input type="date" name="date" id="date" />
+                <div className='flex justify-center'>
+                  <button type="submit">
+                    SEARCH
+                  </button>
                 </div>
               </div>
-            </div>
-            <button type="submit" className='text-xl bg-cms-main-red text-white p-2 m-4 w-96 rounded-2xl'>SEARCH</button>
-          </div> : <div className="otherSearch">
-            <select name="location" id="location">
-              <option value="select">Select Location</option>
-              {statesList.map((i) => {
-                return <option value={i}>{i}</option>
-              })}
-            </select>
-            <input type="date" name="date" id="date" />
-            <div className='flex justify-center'>
-              <button type="submit">SEARCH</button>
-            </div>
-          </div>}
+          }
         </div>
       </div>
       <h1>Top Offers & Discounts</h1>
@@ -1327,13 +1334,33 @@ function Homepage() {
         <h1>Top Destinations for Photoshoots</h1><br />
         {['New Delhi', 'Bangalore', 'Mumbai', 'Chennai', 'Hyderabad', 'Goa', 'Pune', 'Jaipur', 'Pondicherry', 'Kolkata'].map((i) => {
         })}
-        <div className="location"><img className='p-4 w-36 rounded-2xl' src="https://pix6.agoda.net/geo/city/14552/1_14552_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>New Delhi</span></div>
-        <div className="location"><img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/16850/1_16850_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Mumbai</span></div>
-        <div className="location"><img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/4923/1_4923_02.jpg?ca=8&ce=1&s=345x345&ar=1x1" alt="" /><span>Bangalore</span></div>
-        <div className="location"><img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/8801/1_8801_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Hyderabad</span></div>
-        <div className="location"><img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/17269/1_17269_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Chennai</span></div>
-        <div className="location"><img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/11304/1_11304_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Goa</span></div>
-        <div className="location"><img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/8845/1_8845_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Jaipur</span></div><br />
+        <div className="location">
+          <img className='p-4 w-36 rounded-2xl' src="https://pix6.agoda.net/geo/city/14552/1_14552_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" />
+          <span>New Delhi</span>
+        </div>
+        <div className="location">
+          <img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/16850/1_16850_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" />
+          <span>Mumbai</span>
+        </div>
+        <div className="location">
+          <img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/4923/1_4923_02.jpg?ca=8&ce=1&s=345x345&ar=1x1" alt="" />
+          <span>Bangalore</span>
+        </div>
+        <div className="location">
+          <img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/8801/1_8801_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" />
+          <span>Hyderabad</span>
+        </div>
+        <div className="location">
+          <img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/17269/1_17269_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" />
+          <span>Chennai</span>
+        </div>
+        <div className="location">
+          <img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/11304/1_11304_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" />
+          <span>Goa</span>
+        </div>
+        <div className="location">
+          <img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/8845/1_8845_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" />
+          <span>Jaipur</span></div><br />
       </div><br /><hr className='text-dark-grey' /><br />
       <div className='m-2 p-2'>
         <div className="bottom flex justify-between px-20 py-14 rounded-xl bg-cms-main-red text-white ">
