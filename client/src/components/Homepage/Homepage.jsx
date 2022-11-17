@@ -1,4 +1,8 @@
 import React, { useState } from 'react'
+import occassional from 'https://github.com/vishal-1230/CatchMySnap/blob/4e3c5b8dea2a70b348e46af237c9a97f0f005910/client/src/images/occational.svg'
+import hotel from 'https://github.com/vishal-1230/CatchMySnap/blob/4e3c5b8dea2a70b348e46af237c9a97f0f005910/client/src/images/hotel.svg'
+import corporate from 'https://github.com/vishal-1230/CatchMySnap/blob/4e3c5b8dea2a70b348e46af237c9a97f0f005910/client/src/images/corporate.svg'
+import wedding from 'https://github.com/vishal-1230/CatchMySnap/blob/4e3c5b8dea2a70b348e46af237c9a97f0f005910/client/src/images/wedding.svg'
 // import { MdOutlineFestival, MdHolidayVillage, MdOutlineCorporateFare } from 'react-icons/md'
 // import { FaHotel } from 'react-icons/fa'
 // import { AiFillInstagram } from 'react-icons/ai'
