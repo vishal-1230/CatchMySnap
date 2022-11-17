@@ -1251,7 +1251,6 @@ function Homepage() {
             <div className="searchBox">
               {wedding ? <div className="weddingSearch">
             <div>
-              
               <input type="radio" name='shooting-days' onClick={()=>{setsingle(true)}} />
               <label htmlFor="a">Single Day Shoot</label>
               <input type="radio" name='shooting-days' onClick={()=>{setsingle(false)}} />
