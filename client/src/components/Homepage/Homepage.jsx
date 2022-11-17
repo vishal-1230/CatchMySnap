@@ -1244,7 +1244,7 @@ function Homepage() {
         <img className='bgImg w-screen blur-sm' src='https://www.parents.com/thmb/-WzXAufki45bZr9KV9Ptx5r8mZo=/1000x667/filters:fill(auto,1)/shutterstock_286469927-8b82b18bca12479ba7776af8773fed8e.jpg' alt="" />
 
         <div className="searchBox">
-          {wedding ? <div className="weddingSearch">
+          {wedding ? <div className="weddingSearch text-center">
             <div className='p-4 text-lg flex justify-evenly'>
               <div>
                 <input type="radio" name='shooting-days' onClick={() => { setsingle(true) }} />
