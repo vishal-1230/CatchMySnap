@@ -1266,7 +1266,7 @@ function Homepage() {
             <div className='p-4'>
               <input type="date" name="date" id="date" />
             </div>
-            <button type="submit">SEARCH</button>
+            <button type="submit" className='text-xl bg-cms-main-red text-white p-2 m-4 w-96 rounded-2xl'>SEARCH</button>
           </div> : <div className="otherSearch">
             <select name="location" id="location">
               <option value="select">Select Location</option>
