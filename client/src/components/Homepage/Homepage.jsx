@@ -1335,41 +1335,43 @@ function Homepage() {
         <div className="location"><img className='p-4 ' src="https://pix6.agoda.net/geo/city/11304/1_11304_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Goa</span></div>
         <div className="location"><img className='p-4 ' src="https://pix6.agoda.net/geo/city/8845/1_8845_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Jaipur</span></div><br />
       </div><br /><hr className='text-dark-grey' /><br />
-      <div className="bottom flex justify-between px-20 py-14 text-dark-grey">
-        <div>
-          <h3 className='font-semibold text-xl'>PRODUCT OFFERING</h3>
-          <p>Lorem</p>
-          <p>International Shoots</p>
-          <p>Occassional Shoots</p>
-          <p>HOtel & Resort Shooting</p>
-          <p>Corporate Shootings</p>
-          <p>Lifestyle</p>
-          <p>Instagram Shoots</p>
-          <p>Abcdef</p>
-          <p>Ghijklm nopqrs</p>
-          <p>Book Tuvwx Yuie yz</p>
-          <p>SFXShoots Travelling</p>
-        </div><br />
-        <div>
-          <h3 className='font-semibold text-xl'>CATCHMYSNAP</h3>
-          <p>About Us</p>
-          <p>Investor Relations</p>
-          <p>Careers</p>
-          <p>MMT Foundation</p>
-          <p>CSR Policy</p>
-          <p>myPartner - Camera Agent Portal</p>
-          <p>List your Cameramen Agency</p>
-          <p>Partners- Abcdef</p>
-        </div><br />
-        <div>
-          <h3 className='font-semibold text-xl'>ABOUT THIS SITE</h3>
-          <p>Contact Us</p>
-          <p>Payment Security</p>
-          <p>Privacy Policy</p>
-          <p>User Agreement</p>
-          <p>Terms of Service</p>
-          <p>More Offices</p>
-          <p>Apply For Internship</p>
+      <div className='m-2 p-2'>
+        <div className="bottom flex justify-between px-20 py-14 rounded-xl bg-cms-main-red text-white ">
+          <div className=''>
+            <h3 className='font-semibold text-xl'>PRODUCT OFFERING</h3>
+            <p>Lorem</p>
+            <p>International Shoots</p>
+            <p>Occassional Shoots</p>
+            <p>HOtel & Resort Shooting</p>
+            <p>Corporate Shootings</p>
+            <p>Lifestyle</p>
+            <p>Instagram Shoots</p>
+            <p>Abcdef</p>
+            <p>Ghijklm nopqrs</p>
+            <p>Book Tuvwx Yuie yz</p>
+            <p>SFXShoots Travelling</p>
+          </div><br />
+          <div>
+            <h3 className='font-semibold text-xl'>CATCHMYSNAP</h3>
+            <p>About Us</p>
+            <p>Investor Relations</p>
+            <p>Careers</p>
+            <p>MMT Foundation</p>
+            <p>CSR Policy</p>
+            <p>myPartner - Camera Agent Portal</p>
+            <p>List your Cameramen Agency</p>
+            <p>Partners- Abcdef</p>
+          </div><br />
+          <div>
+            <h3 className='font-semibold text-xl'>ABOUT THIS SITE</h3>
+            <p>Contact Us</p>
+            <p>Payment Security</p>
+            <p>Privacy Policy</p>
+            <p>User Agreement</p>
+            <p>Terms of Service</p>
+            <p>More Offices</p>
+            <p>Apply For Internship</p>
+          </div>
         </div><br />
       </div>
       <div className="footer bg-grey1 p-2">
