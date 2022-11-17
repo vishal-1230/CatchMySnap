@@ -1,4 +1,9 @@
 import React from 'react'
+import FestivalOutlined from '@mui/icons-material/FestivalOutlined';
+import Hotel from "@mui/icons-material/Hotel";
+import Instagram from "@mui/icons-material/Instagram";
+import HolidayVillage from "@mui/icons-material/HolidayVillage";
+import CorporateFare from "@mui/icons-material/CorporateFare";
 import Header from './Header'
 import bg from './cms1.png';
 
@@ -1235,8 +1240,14 @@ function Homepage() {
       <div className="searchArea">
         <img className='bgImg w-screen blur-sm' src='https://www.parents.com/thmb/-WzXAufki45bZr9KV9Ptx5r8mZo=/1000x667/filters:fill(auto,1)/shutterstock_286469927-8b82b18bca12479ba7776af8773fed8e.jpg' alt="" />
         <div className='iconDiv'>
-          <div className="icondiv">
+          <div className="wedding"><FestivalOutlined /><span>Wedding Shoots</span></div>
+          <div className="instagram"><Instagram />Instagram Shoots</div>
+          <div className="occassional"><HolidayVillage /><span>Occassional Shoots</span></div>
+          <div className="corporate"><CorporateFare /><span>Corporate Shoots</span></div>
+          <div className="hotelandresorts"><Hotel /><span>Hotels and Resort Shoots</span></div>
+        </div>
             <div className="searchBar">
+              
               <select name="location" id="location">
               <option value="select">Select Location</option>
               {statesList.map((i)=>{
@@ -1246,8 +1257,9 @@ function Homepage() {
               <input type="date" name="date" id="date" />
               <button type="submit">SEARCH</button>
             </div>
-          </div>
-        </div>
+            <div className="feauturesDiv">
+              
+            </div>
       </div>
       <div className="bottom">
 
