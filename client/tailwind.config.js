@@ -5,7 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-
+      backgroundImage: {
+        'image-cms1': "url('images/bg.jpg')",
+      }
     },
     colors: {
       

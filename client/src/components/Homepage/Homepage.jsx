@@ -10,7 +10,7 @@ import bg from './cms1.png';
 // import styles from './Homepage.module.css'
 
 function Homepage() {
-  const statesList=[
+  const statesList = [
     "Achalpur",
     "Achhnera",
     "Adalaj",
@@ -1233,15 +1233,15 @@ function Homepage() {
     <div>
       <Header></Header>
       <div className="searchArea">
-        <img className='bgImg w-screen blur-sm' src='https://www.parents.com/thmb/-WzXAufki45bZr9KV9Ptx5r8mZo=/1000x667/filters:fill(auto,1)/shutterstock_286469927-8b82b18bca12479ba7776af8773fed8e.jpg' alt="" />
-        <div className='iconDiv'>
+        <div className="bg-image-cms1 w-screen h-screen bg-cover absolute blur-md -z-10"></div>
+        <div className=" w-screen h-screen bg-cover " >
           <div className="icondiv">
             <div className="searchBar">
               <select name="location" id="location">
-              <option value="select">Select Location</option>
-              {statesList.map((i)=>{
-                return <option value={i}>{i}</option>
-              })}
+                <option value="select">Select Location</option>
+                {statesList.map((i) => {
+                  return <option value={i}>{i}</option>
+                })}
               </select>
               <input type="date" name="date" id="date" />
               <button type="submit">SEARCH</button>
