@@ -131,7 +131,7 @@ const Header = () => {
           {/* <Login handleClick={handlePopup}/> */}
         </div>
         <div className="flex justify-center items-center">
-        <button className="text-cms-deep-red border-2 rounded-2xl w-32 h-10 hover:text-white hover:bg-cms-main-red duration-300">LOGIN</button>
+        <button className="text-cms-deep-red border-2 rounded-xl mr-14 -ml-32 w-32 h-10 hover:text-white hover:bg-cms-main-red duration-300">LOGIN</button>
         </div>
       </div>
     </div>

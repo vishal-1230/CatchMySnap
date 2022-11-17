@@ -1241,13 +1241,7 @@ function Homepage() {
       <Header></Header>
       <div className="searchArea">
         <img className='bgImg w-screen blur-sm' src='https://www.parents.com/thmb/-WzXAufki45bZr9KV9Ptx5r8mZo=/1000x667/filters:fill(auto,1)/shutterstock_286469927-8b82b18bca12479ba7776af8773fed8e.jpg' alt="" />
-        <div className='iconDiv'>
-          <div className="wedding" onClick={() => { setwedding(true) }}><MdOutlineFestival /><span>Wedding Shoots</span></div>
-          <div className="instagram" onClick={() => { setwedding(false) }}><AiFillInstagram />Instagram Shoots</div>
-          <div className="occassional" onClick={() => { setwedding(false) }}><MdHolidayVillage /><span>Occassional Shoots</span></div>
-          <div className="corporate" onClick={() => { setwedding(false) }}><MdOutlineCorporateFare /><span>Corporate Shoots</span></div>
-          <div className="hotelandresorts" onClick={() => { setwedding(false) }}><FaHotel /><span>Hotels and Resort Shoots</span></div>
-        </div>
+        
         <div className="searchBox">
           {wedding ? <div className="weddingSearch">
             <div>
@@ -1256,7 +1250,7 @@ function Homepage() {
               <input type="radio" name='shooting-days' onClick={() => { setsingle(false) }} />
               <label htmlFor="a">Multiple Days Shoot</label>
             </div>
-            <select name="location" id="location">
+            <select name="location" className='p-50' style={{padding: '100px'}} id="location">
               <option className='p-4' value="select">Select Location</option>
               {statesList.map((i) => {
                 return <option value={i}>{i}</option>
@@ -1265,7 +1259,7 @@ function Homepage() {
             <div className='p-4'>
             <input type="date" name="date" id="date" />
             </div>
-            <button type="submit">SEARCH</button>
+            <button type="submit" className='w-50' style={{padding: '100px', background:'green'}}>SEARCH</button>
           </div> : <div className="otherSearch">
             <select name="location" id="location">
               <option value="select">Select Location</option>
