@@ -10,7 +10,6 @@ module.exports = {
       }
     },
     colors: {
-      
       'cms-main-red': '#ac0404',
       'cms-deep-red': '#620404',
       'cms-bright': '#b00404',
