@@ -13,7 +13,6 @@ import { useState } from "react";
 import bg from './cms1.png';
 import { Link } from "react-router-dom";
 // import { Login } from "../login/Login";
-
 // const Icondivcss = styled.div`
 //   .icondiv {
 //     height: 60px;
@@ -31,7 +30,6 @@ import { Link } from "react-router-dom";
 //       flex-direction: row;
 //       justify-content: space-around;
 //       width: 60%;
-
 //       p {
 //         padding: 0px;
 //         margin: -6px;
@@ -71,7 +69,6 @@ import { Link } from "react-router-dom";
 //   width: 110px;
 // }
 // `;
-
 const Header = () => {
   const handlePopup = () => {
     const popup = document.getElementById("popup");
@@ -87,53 +84,54 @@ const Header = () => {
   };
   window.addEventListener("scroll", handleChange);
   return (
-<div className="bg-grey1">
-
-    <div className="flex justify-center bg-white rounded-xl m-4">
-      <div className="imgdiv">
-        <Link to="/">
-          <img src={bg} className='w-44 p-6' alt="Logo" />
-        </Link>
-      </div>
-      <div className="flex justify-center items-center">
-        <div className="flex justify-center items-center px-6">
-          <span className="flex justify-center">
-            <FlightIcon></FlightIcon>
-          </span>
-          <p className="text-sm p-2">Wedding Photoshoots</p>
+    <div className="bg-grey1">
+      <div className="flex justify-center bg-white rounded-xl m-4">
+        <div className="imgdiv">
+          <Link to="/">
+            <img src={bg} className='w-44 p-6' alt="Logo" />
+          </Link>
         </div>
-        <div className="flex justify-center items-center px-6">
-          <span className="flex justify-center">
-            <HotelIcon ></HotelIcon>
-          </span>
-          <p className="text-sm p-2">Instagram Shoots</p>
+        <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center px-6">
+            <span className="flex justify-center">
+              <FlightIcon></FlightIcon>
+            </span>
+            <p className="text-sm p-2">Wedding Photoshoots</p>
+          </div>
+          <div className="flex justify-center items-center px-6">
+            <span className="flex justify-center">
+              <HotelIcon ></HotelIcon>
+            </span>
+            <p className="text-sm p-2">Instagram Shoots</p>
+          </div>
+          <div className="flex justify-center items-center px-6">
+            <span className="flex justify-center">
+              <HomeWorkIcon ></HomeWorkIcon>
+            </span>
+            <p className="text-sm p-2">Occassional Shoots</p>
+          </div>
+          <div className="flex justify-center items-center px-6">
+            <span className="flex justify-center">
+              <HolidayVillageIcon></HolidayVillageIcon>
+            </span>
+            <p className="text-sm p-2">Corporate Shoots</p>
+          </div>
+          <div className="flex justify-center items-center px-6">
+            <span className="flex justify-center">
+              <TrainIcon ></TrainIcon>
+            </span>
+            <p className="text-sm p-2">Hotel and Resort Shoots</p>
+          </div>
         </div>
-        <div className="flex justify-center items-center px-6">
-          <span className="flex justify-center">
-            <HomeWorkIcon ></HomeWorkIcon>
-          </span>
-          <p className="text-sm p-2">Occassional Shoots</p>
+        <form id="content">
+          <input type="text" name="input" class="input" id="search-input" />
+          <button type="reset" class="search" id="search-btn"></button>
+        </form>
+        <div className="login">
+          {/* <Login handleClick={handlePopup}/> */}
         </div>
-        <div className="flex justify-center items-center px-6">
-          <span className="flex justify-center">
-            <HolidayVillageIcon></HolidayVillageIcon>
-          </span>
-          <p className="text-sm p-2">Corporate Shoots</p>
-        </div>
-        <div className="flex justify-center items-center px-6">
-        <span className="flex justify-center">
-            <TrainIcon ></TrainIcon>
-          </span>
-          <p className="text-sm p-2">Hotel and Resort Shoots</p>
-        </div>
-      </div>
-      <div className="login">
-        {/* <Login handleClick={handlePopup}/> */}
       </div>
     </div>
-</div>
   );
 };
-
-
 export default Header
