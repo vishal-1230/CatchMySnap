@@ -1323,17 +1323,17 @@ function Homepage() {
         <img className='w-96 h-40 p-4' src="https://i0.wp.com/lizscavilla.com/wp-content/uploads/2019/01/FLASH-SALE-50-OFF.png?fit=800%2C800&ssl=1" alt="" />
         <img className='w-96 h-40 p-4' src="https://malayweddingservices.com/wp-content/uploads/Haizal-M-Malay-Wedding-photography-discount-coupon-code.jpg" alt="" />
       </div>
-      <div className="destinations">
+      <div className="destinations flex">
         <h1>Top Destinations for Photoshoots</h1>
         {['New Delhi', 'Bangalore', 'Mumbai', 'Chennai', 'Hyderabad', 'Goa', 'Pune', 'Jaipur', 'Pondicherry', 'Kolkata'].map((i) => {
         })}
-        <div className="location"><img className='p-4 rounded-2xl' src="https://pix6.agoda.net/geo/city/14552/1_14552_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>New Delhi</span></div>
-        <div className="location"><img className='p-4 ' src="https://pix6.agoda.net/geo/city/16850/1_16850_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Mumbai</span></div>
-        <div className="location"><img className='p-4 ' src="https://pix6.agoda.net/geo/city/4923/1_4923_02.jpg?ca=8&ce=1&s=345x345&ar=1x1" alt="" /><span>Bangalore</span></div>
-        <div className="location"><img className='p-4 ' src="https://pix6.agoda.net/geo/city/8801/1_8801_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Hyderabad</span></div>
-        <div className="location"><img className='p-4 ' src="https://pix6.agoda.net/geo/city/17269/1_17269_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Chennai</span></div>
-        <div className="location"><img className='p-4 ' src="https://pix6.agoda.net/geo/city/11304/1_11304_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Goa</span></div>
-        <div className="location"><img className='p-4 ' src="https://pix6.agoda.net/geo/city/8845/1_8845_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Jaipur</span></div><br />
+        <div className="location"><img className='p-4 w-36 rounded-2xl' src="https://pix6.agoda.net/geo/city/14552/1_14552_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>New Delhi</span></div>
+        <div className="location"><img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/16850/1_16850_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Mumbai</span></div>
+        <div className="location"><img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/4923/1_4923_02.jpg?ca=8&ce=1&s=345x345&ar=1x1" alt="" /><span>Bangalore</span></div>
+        <div className="location"><img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/8801/1_8801_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Hyderabad</span></div>
+        <div className="location"><img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/17269/1_17269_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Chennai</span></div>
+        <div className="location"><img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/11304/1_11304_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Goa</span></div>
+        <div className="location"><img className='p-4 w-36 rounded-xl' src="https://pix6.agoda.net/geo/city/8845/1_8845_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Jaipur</span></div><br />
       </div><br /><hr className='text-dark-grey' /><br />
       <div className="bottom flex justify-between px-20 py-14 text-dark-grey">
         <div>
