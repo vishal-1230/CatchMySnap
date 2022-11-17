@@ -1242,23 +1242,31 @@ function Homepage() {
       <Header></Header>
       <div className="searchArea">
         <img className='bgImg w-screen blur-sm' src='https://www.parents.com/thmb/-WzXAufki45bZr9KV9Ptx5r8mZo=/1000x667/filters:fill(auto,1)/shutterstock_286469927-8b82b18bca12479ba7776af8773fed8e.jpg' alt="" />
-        
+
         <div className="searchBox">
           {wedding ? <div className="weddingSearch">
-            <div>
-              <input type="radio" name='shooting-days' onClick={() => { setsingle(true) }} />
-              <label htmlFor="a">Single Day Shoot</label>
-              <input type="radio" name='shooting-days' onClick={() => { setsingle(false) }} />
-              <label htmlFor="a">Multiple Days Shoot</label>
+            <div className='p-4 text-lg flex justify-evenly'>
+              <div>
+                <input type="radio" name='shooting-days' onClick={() => { setsingle(true) }} />
+                <label className='p-2' htmlFor="a">Single Day Shoot</label>
+              </div>
+              <div>
+                <input type="radio" name='shooting-days' onClick={() => { setsingle(false) }} />
+                <label className='p-2' htmlFor="a">Multiple Days Shoot</label>
+              </div>
             </div>
-            <select name="location" className='p-50' style={{padding: '100px'}} id="location">
-              <option className='p-4' value="select">Select Location</option>
-              {statesList.map((i) => {
-                return <option value={i}>{i}</option>
-              })}
-            </select>
-            <div className='p-4'>
-              <input type="date" name="date" id="date" />
+            <div className='flex justify-center'>
+              <select name="location" className='w-96 h-10 rounded-lg m-2' id="location">
+                <option value="select">Select Location</option>
+                {statesList.map((i) => {
+                  return <option value={i}>{i}</option>
+                })}
+              </select>
+              <div className='m-2'>
+                <div className='flex items-center justify-center w-96 h-10 rounded-lg bg-white' >
+                  <input className='' type="date" name="date" id="date" />
+                </div>
+              </div>
             </div>
             <button type="submit" className='text-xl bg-cms-main-red text-white p-2 m-4 w-96 rounded-2xl'>SEARCH</button>
           </div> : <div className="otherSearch">
@@ -1269,7 +1277,9 @@ function Homepage() {
               })}
             </select>
             <input type="date" name="date" id="date" />
-            <button type="submit">SEARCH</button>
+            <div className='flex justify-center'>
+              <button type="submit">SEARCH</button>
+            </div>
           </div>}
         </div>
       </div>
