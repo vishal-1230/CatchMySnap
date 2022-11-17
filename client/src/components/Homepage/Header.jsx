@@ -102,32 +102,32 @@ const Header = () => {
             <span className="flex justify-center">
               <HotelIcon ></HotelIcon>
             </span>
-            <p className="text-sm p-2">Instagram Shoots</p>
+            <p className="text-sm p-2 hover:text-cms-bright hover:font-bold duration-300	">Instagram Shoots</p>
           </div>
           <div className="flex justify-center items-center px-6">
             <span className="flex justify-center">
               <HomeWorkIcon ></HomeWorkIcon>
             </span>
-            <p className="text-sm p-2">Occassional Shoots</p>
+            <p className="text-sm p-2 hover:text-cms-bright hover:font-bold duration-300	">Occassional Shoots</p>
           </div>
           <div className="flex justify-center items-center px-6">
             <span className="flex justify-center">
               <HolidayVillageIcon></HolidayVillageIcon>
             </span>
-            <p className="text-sm p-2">Corporate Shoots</p>
+            <p className="text-sm p-2 hover:text-cms-bright hover:font-bold duration-300	">Corporate Shoots</p>
           </div>
           <div className="flex justify-center items-center px-6">
             <span className="flex justify-center">
               <TrainIcon ></TrainIcon>
             </span>
-            <p className="text-sm p-2">Hotel and Resort Shoots</p>
+            <p className="text-sm p-2 hover:text-cms-bright hover:font-bold duration-300	">Hotel and Resort Shoots</p>
           </div>
         </div>
         <div className="login">
           {/* <Login handleClick={handlePopup}/> */}
         </div>
         <div className="flex justify-center items-center m-4">
-        <button className="text-cms-deep-red border-2 rounded-xl mr-14 -ml-32 w-32 h-10 hover:text-white hover:bg-cms-main-red duration-300">LOGIN</button>
+        <button className="text-cms-deep-red border-2 rounded-xl w-32 h-10 hover:text-white hover:bg-cms-main-red duration-300">LOGIN</button>
         </div>
       </div>
     </div>
