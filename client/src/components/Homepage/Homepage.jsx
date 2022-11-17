@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { MdOutlineFestival, MdHolidayVillage, MdOutlineCorporateFare } from 'react-icons/md'
-import { FaHotel } from 'react-icons/fa'
-import { AiFillInstagram } from 'react-icons/ai'
+// import { MdOutlineFestival, MdHolidayVillage, MdOutlineCorporateFare } from 'react-icons/md'
+// import { FaHotel } from 'react-icons/fa'
+// import { AiFillInstagram } from 'react-icons/ai'
 import Header from './Header'
 import bg from './cms1.png';
-import Homepagecss from './homepage.module.css'
+// import Homepagecss from './homepage.module.css'
 
 // import FlightIcon from "@mui/icons-material/FestivalOutlined";
 // import HomeWorkIcon from "@mui/icons-material/Instagram";
@@ -1246,7 +1246,7 @@ function Homepage() {
         <div className="searchBox flex justify-center">
           {
             wedding ?
-              <div className="weddingSearch text-center p-4 m-6 rounded-xl bg-grey1 max-w-fit ">
+              <div className="weddingSearch text-center p-4 m-6 rounded-xl bg-grey1 shadow-dark-grey shadow-2xl max-w-fit ">
                 <div className='p-4 text-lg flex justify-evenly '>
                   <div>
                     <input type="radio" name='shooting-days' onClick={() => { setsingle(true) }} />
