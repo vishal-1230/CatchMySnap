@@ -1287,10 +1287,44 @@ function Homepage() {
         <div className="location"><img src="https://pix6.agoda.net/geo/city/8801/1_8801_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Hyderabad</span></div>
         <div className="location"><img src="https://pix6.agoda.net/geo/city/17269/1_17269_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Chennai</span></div>
         <div className="location"><img src="https://pix6.agoda.net/geo/city/11304/1_11304_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Goa</span></div>
-        <div className="location"><img src="https://pix6.agoda.net/geo/city/8845/1_8845_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Jaipur</span></div>
+        <div className="location"><img src="https://pix6.agoda.net/geo/city/8845/1_8845_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Jaipur</span></div><br />
       </div>
       <div className="bottom">
-
+      <div>
+        <h3>PRODUCT OFFERING</h3>
+        <p>Lorem</p>
+        <p>International Shoots</p>
+        <p>Occassional Shoots</p>
+        <p>HOtel & Resort Shooting</p>
+        <p>Corporate Shootings</p>
+        <p>Lifestyle</p>
+        <p>Instagram Shoots</p>
+        <p>Abcdef</p>
+        <p>Ghijklm nopqrs</p>
+        <p>Book Tuvwx Yuie yz</p>
+        <p>SFXShoots Travelling</p>
+</div><br />
+<div>
+    <h3>CATCHMYSNAP</h3>
+    <p>About Us</p>
+    <p>Investor Relations</p>
+    <p>Careers</p>
+    <p>MMT Foundation</p>
+    <p>CSR Policy</p>
+    <p>myPartner - Camera Agent Portal</p>
+    <p>List your Cameramen Agency</p>
+    <p>Partners- Abcdef</p>
+</div><br />
+<div>
+    <h3>ABOUT THIS SITE</h3>
+    <p>Contact Us</p>
+    <p>Payment Security</p>
+    <p>Privacy Policy</p>
+    <p>User Agreement</p>
+    <p>Terms of Service</p>
+    <p>More Offices</p>
+    <p>Apply For Internship</p>
+</div><br />
       </div>
       <div className="footer bg-grey1 p-2">
         <footer className='bg-white m-4 p-4 rounded-xl'>
@@ -1328,11 +1362,11 @@ function Homepage() {
                 </div>
               </div>
               <div className="col flex flex-row flex-grow">
-                <h3 className="p-4">Info</h3>
+                <h3 className="p-4">Info</h3><br />
                 <nav >
                   <ul>
                     <li><a href="/">Formats</a></li>
-                    <li><a href="/">Compression</a></li>
+                    <li><a href="/">Comparison</a></li>
                     <li><a href="/">Pricing</a></li>
                     <li><a href="/">FAQ</a></li>
                     <li><a href="/">Status</a></li>
@@ -1340,7 +1374,7 @@ function Homepage() {
                 </nav>
               </div>
               <div className="col flex flex-column flex-g-1 flex-start">
-                <h3 className="p-4">Resources</h3>
+                <h3 className="p-4">Resources</h3><br />
                 <nav>
                   <ul>
                     <li><a href="/">Developer API</a></li>
