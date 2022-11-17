@@ -123,14 +123,10 @@ const Header = () => {
             <p className="text-sm p-2">Hotel and Resort Shoots</p>
           </div>
         </div>
-        <form id="content">
-          <input type="text" name="input" className="input" id="search-input" />
-          <button type="reset" className="" id="search-btn"></button>
-        </form>
         <div className="login">
           {/* <Login handleClick={handlePopup}/> */}
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center m-4">
         <button className="text-cms-deep-red border-2 rounded-2xl w-32 h-10 hover:text-white hover:bg-cms-main-red duration-300">LOGIN</button>
         </div>
       </div>
