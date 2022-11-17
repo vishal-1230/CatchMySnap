@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import {MdOutlineFestival, MdHolidayVillage, MdOutlineCorporateFare} from 'react-icons/md'
+import React, { useState } from 'react'
+import { MdOutlineFestival, MdHolidayVillage, MdOutlineCorporateFare } from 'react-icons/md'
 import { FaHotel } from 'react-icons/fa'
 import { AiFillInstagram } from 'react-icons/ai'
 import Header from './Header'
@@ -13,7 +13,7 @@ import bg from './cms1.png';
 // import styles from './Homepage.module.css'
 
 function Homepage() {
-  const statesList=[
+  const statesList = [
     "Achalpur",
     "Achhnera",
     "Adalaj",
@@ -1242,42 +1242,44 @@ function Homepage() {
       <div className="searchArea">
         <img className='bgImg w-screen blur-sm' src='https://www.parents.com/thmb/-WzXAufki45bZr9KV9Ptx5r8mZo=/1000x667/filters:fill(auto,1)/shutterstock_286469927-8b82b18bca12479ba7776af8773fed8e.jpg' alt="" />
         <div className='iconDiv'>
-          <div className="wedding" onClick={()=>{setwedding(true)}}><MdOutlineFestival /><span>Wedding Shoots</span></div>
-          <div className="instagram" onClick={()=>{setwedding(false)}}><AiFillInstagram />Instagram Shoots</div>
-          <div className="occassional" onClick={()=>{setwedding(false)}}><MdHolidayVillage /><span>Occassional Shoots</span></div>
-          <div className="corporate" onClick={()=>{setwedding(false)}}><MdOutlineCorporateFare /><span>Corporate Shoots</span></div>
-          <div className="hotelandresorts" onClick={()=>{setwedding(false)}}><FaHotel /><span>Hotels and Resort Shoots</span></div>
+          <div className="wedding" onClick={() => { setwedding(true) }}><MdOutlineFestival /><span>Wedding Shoots</span></div>
+          <div className="instagram" onClick={() => { setwedding(false) }}><AiFillInstagram />Instagram Shoots</div>
+          <div className="occassional" onClick={() => { setwedding(false) }}><MdHolidayVillage /><span>Occassional Shoots</span></div>
+          <div className="corporate" onClick={() => { setwedding(false) }}><MdOutlineCorporateFare /><span>Corporate Shoots</span></div>
+          <div className="hotelandresorts" onClick={() => { setwedding(false) }}><FaHotel /><span>Hotels and Resort Shoots</span></div>
         </div>
-            <div className="searchBox">
-              {wedding ? <div className="weddingSearch">
+        <div className="searchBox">
+          {wedding ? <div className="weddingSearch">
             <div>
-              <input type="radio" name='shooting-days' onClick={()=>{setsingle(true)}} />
+              <input type="radio" name='shooting-days' onClick={() => { setsingle(true) }} />
               <label htmlFor="a">Single Day Shoot</label>
-              <input type="radio" name='shooting-days' onClick={()=>{setsingle(false)}} />
+              <input type="radio" name='shooting-days' onClick={() => { setsingle(false) }} />
               <label htmlFor="a">Multiple Days Shoot</label>
             </div>
-              <select name="location" id="location">
-              <option value="select">Select Location</option>
-              {statesList.map((i)=>{
+            <select name="location" id="location">
+              <option className='p-4' value="select">Select Location</option>
+              {statesList.map((i) => {
                 return <option value={i}>{i}</option>
               })}
-              </select>
-              <input type="date" name="date" id="date" />
-              <button type="submit">SEARCH</button>
-              </div>: <div className="otherSearch">
-              <select name="location" id="location">
+            </select>
+            <div className='p-4'>
+            <input type="date" name="date" id="date" />
+            </div>
+            <button type="submit">SEARCH</button>
+          </div> : <div className="otherSearch">
+            <select name="location" id="location">
               <option value="select">Select Location</option>
-              {statesList.map((i)=>{
+              {statesList.map((i) => {
                 return <option value={i}>{i}</option>
               })}
-              </select>
-              <input type="date" name="date" id="date" />
-              <button type="submit">SEARCH</button>
-              </div>}    
+            </select>
+            <input type="date" name="date" id="date" />
+            <button type="submit">SEARCH</button>
+          </div>}
+        </div>
       </div>
-    </div>
-    <h1>Top Offers & Dsicounts</h1>
-      <div  className='flex flex-row p-6 m-6'>
+      <h1>Top Offers & Dsicounts</h1>
+      <div className='flex flex-row p-6 m-6'>
         <img className='w-96 h-40 p-4' src="https://cdn6.agoda.net/images/WebCampaign/wcSP20220307MV/home_banner_web/en-us.png" alt="" />
         <img className='w-96 h-40 p-4' src="https://www.dazzphotography.com/wp-content/uploads/2018/07/Monsoon-Magic-Pune-Photography-Offer.jpg" alt="" />
         <img className='w-96 h-40 p-4' src="https://i0.wp.com/lizscavilla.com/wp-content/uploads/2019/01/FLASH-SALE-50-OFF.png?fit=800%2C800&ssl=1" alt="" />
@@ -1285,7 +1287,7 @@ function Homepage() {
       </div>
       <div className="destinations">
         <h1>Top Destinations for Photoshoots</h1>
-        {['New Delhi', 'Bangalore', 'Mumbai', 'Chennai', 'Hyderabad', 'Goa', 'Pune', 'Jaipur', 'Pondicherry', 'Kolkata'].map((i)=>{
+        {['New Delhi', 'Bangalore', 'Mumbai', 'Chennai', 'Hyderabad', 'Goa', 'Pune', 'Jaipur', 'Pondicherry', 'Kolkata'].map((i) => {
         })}
         <div className="location"><img className='p-4 rounded-2xl' src="https://pix6.agoda.net/geo/city/14552/1_14552_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>New Delhi</span></div>
         <div className="location"><img className='p-4 ' src="https://pix6.agoda.net/geo/city/16850/1_16850_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Mumbai</span></div>
@@ -1296,41 +1298,41 @@ function Homepage() {
         <div className="location"><img className='p-4 ' src="https://pix6.agoda.net/geo/city/8845/1_8845_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Jaipur</span></div><br />
       </div>
       <div className="bottom">
-      <div>
-        <h3>PRODUCT OFFERING</h3>
-        <p>Lorem</p>
-        <p>International Shoots</p>
-        <p>Occassional Shoots</p>
-        <p>HOtel & Resort Shooting</p>
-        <p>Corporate Shootings</p>
-        <p>Lifestyle</p>
-        <p>Instagram Shoots</p>
-        <p>Abcdef</p>
-        <p>Ghijklm nopqrs</p>
-        <p>Book Tuvwx Yuie yz</p>
-        <p>SFXShoots Travelling</p>
-</div><br />
-<div>
-    <h3>CATCHMYSNAP</h3>
-    <p>About Us</p>
-    <p>Investor Relations</p>
-    <p>Careers</p>
-    <p>MMT Foundation</p>
-    <p>CSR Policy</p>
-    <p>myPartner - Camera Agent Portal</p>
-    <p>List your Cameramen Agency</p>
-    <p>Partners- Abcdef</p>
-</div><br />
-<div>
-    <h3>ABOUT THIS SITE</h3>
-    <p>Contact Us</p>
-    <p>Payment Security</p>
-    <p>Privacy Policy</p>
-    <p>User Agreement</p>
-    <p>Terms of Service</p>
-    <p>More Offices</p>
-    <p>Apply For Internship</p>
-</div><br />
+        <div>
+          <h3>PRODUCT OFFERING</h3>
+          <p>Lorem</p>
+          <p>International Shoots</p>
+          <p>Occassional Shoots</p>
+          <p>HOtel & Resort Shooting</p>
+          <p>Corporate Shootings</p>
+          <p>Lifestyle</p>
+          <p>Instagram Shoots</p>
+          <p>Abcdef</p>
+          <p>Ghijklm nopqrs</p>
+          <p>Book Tuvwx Yuie yz</p>
+          <p>SFXShoots Travelling</p>
+        </div><br />
+        <div>
+          <h3>CATCHMYSNAP</h3>
+          <p>About Us</p>
+          <p>Investor Relations</p>
+          <p>Careers</p>
+          <p>MMT Foundation</p>
+          <p>CSR Policy</p>
+          <p>myPartner - Camera Agent Portal</p>
+          <p>List your Cameramen Agency</p>
+          <p>Partners- Abcdef</p>
+        </div><br />
+        <div>
+          <h3>ABOUT THIS SITE</h3>
+          <p>Contact Us</p>
+          <p>Payment Security</p>
+          <p>Privacy Policy</p>
+          <p>User Agreement</p>
+          <p>Terms of Service</p>
+          <p>More Offices</p>
+          <p>Apply For Internship</p>
+        </div><br />
       </div>
       <div className="footer bg-grey1 p-2">
         <footer className='bg-white m-4 p-4 rounded-xl'>
