@@ -96,7 +96,7 @@ const Header = () => {
             <span className="flex justify-center">
               <FlightIcon></FlightIcon>
             </span>
-            <p className="text-sm p-2">Wedding Photoshoots</p>
+            <p className="text-sm p-2 hover:text-cms-bright hover:font-bold duration-300	">Wedding Photoshoots</p>
           </div>
           <div className="flex justify-center items-center px-6">
             <span className="flex justify-center">
