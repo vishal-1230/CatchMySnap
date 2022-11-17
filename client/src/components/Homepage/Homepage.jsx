@@ -1246,9 +1246,7 @@ function Homepage() {
             wedding ?
               <div className="weddingSearch text-center px-14 py-8 m-6 rounded-xl bg-grey1 shadow-dark-grey shadow-2xl max-w-fit ">
                 <div className='p-4 text-lg flex justify-evenly '>
-                
 {/*
-
 
 ██╗███╗░░░███╗░█████╗░░██████╗░███████╗  ██╗░░██╗███████╗██████╗░███████╗
 ██║████╗░████║██╔══██╗██╔════╝░██╔════╝  ██║░░██║██╔════╝██╔══██╗██╔════╝
@@ -1256,11 +1254,9 @@ function Homepage() {
 ██║██║╚██╔╝██║██╔══██║██║░░╚██╗██╔══╝░░  ██╔══██║██╔══╝░░██╔══██╗██╔══╝░░
 ██║██║░╚═╝░██║██║░░██║╚██████╔╝███████╗  ██║░░██║███████╗██║░░██║███████╗
 ╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝░╚═════╝░╚══════╝  ╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚══════╝
-
 */}
 
-                <img src={Image} alt="" />
-               
+                  <img src={Image} alt="" />
                   <div>
                     <input type="radio" name='shooting-days' onClick={() => { setsingle(true) }} />
                     <label className='p-2' htmlFor="a">Single Day Shoot</label>
