@@ -1251,7 +1251,6 @@ function Homepage() {
             <div className="searchBox">
               {wedding ? <div className="weddingSearch">
             <div>
-              
               <input type="radio" name='shooting-days' onClick={()=>{setsingle(true)}} />
               <label htmlFor="a">Single Day Shoot</label>
               <input type="radio" name='shooting-days' onClick={()=>{setsingle(false)}} />
@@ -1275,17 +1274,14 @@ function Homepage() {
               <input type="date" name="date" id="date" />
               <button type="submit">SEARCH</button>
               </div>}
-              
-              
-              
       </div>
     </div>
       <div className='offers'>
-        <h1>Top Offers & Dsicounts</h1>
-        <img src="https://cdn6.agoda.net/images/WebCampaign/wcSP20220307MV/home_banner_web/en-us.png" alt="" />
-        <img src="https://www.dazzphotography.com/wp-content/uploads/2018/07/Monsoon-Magic-Pune-Photography-Offer.jpg" alt="" />
-        <img src="https://i0.wp.com/lizscavilla.com/wp-content/uploads/2019/01/FLASH-SALE-50-OFF.png?fit=800%2C800&ssl=1" alt="" />
-        <img src="https://malayweddingservices.com/wp-content/uploads/Haizal-M-Malay-Wedding-photography-discount-coupon-code.jpg" alt="" />
+        <h1>Top Offers & Discounts</h1>
+        <img className='w-19' src="https://cdn6.agoda.net/images/WebCampaign/wcSP20220307MV/home_banner_web/en-us.png" alt="" />
+        <img className='w-19' src="https://www.dazzphotography.com/wp-content/uploads/2018/07/Monsoon-Magic-Pune-Photography-Offer.jpg" alt="" />
+        <img className='w-19' src="https://i0.wp.com/lizscavilla.com/wp-content/uploads/2019/01/FLASH-SALE-50-OFF.png?fit=800%2C800&ssl=1" alt="" />
+        <img className='w-19' src="https://malayweddingservices.com/wp-content/uploads/Haizal-M-Malay-Wedding-photography-discount-coupon-code.jpg" alt="" />
       </div>
       <div className="destinations">
         <h1>Top Destinations for Photoshoots</h1>
