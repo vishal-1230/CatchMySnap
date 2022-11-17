@@ -15,7 +15,8 @@ module.exports = {
       'cms-bright': '#b00404',
       'cms-black':'#050404',
       'white':'#FFFFFF',
-      'grey1':'#e1e1e1'
+      'grey1':'#e1e1e1',
+      'dark-grey':'#636e72'
     },
   },
   plugins: [],

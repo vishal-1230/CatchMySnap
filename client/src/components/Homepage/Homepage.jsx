@@ -1283,7 +1283,7 @@ function Homepage() {
           </div>}
         </div>
       </div>
-      <h1>Top Offers & Dsicounts</h1>
+      <h1>Top Offers & Discounts</h1>
 
       <div id="default-carousel" class="relative" data-carousel="static">
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -1334,10 +1334,10 @@ function Homepage() {
         <div className="location"><img className='p-4 ' src="https://pix6.agoda.net/geo/city/17269/1_17269_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Chennai</span></div>
         <div className="location"><img className='p-4 ' src="https://pix6.agoda.net/geo/city/11304/1_11304_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Goa</span></div>
         <div className="location"><img className='p-4 ' src="https://pix6.agoda.net/geo/city/8845/1_8845_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>Jaipur</span></div><br />
-      </div>
-      <div className="bottom">
+      </div><br /><hr className='text-dark-grey' /><br />
+      <div className="bottom flex justify-between px-20 py-14 text-dark-grey">
         <div>
-          <h3>PRODUCT OFFERING</h3>
+          <h3 className='font-semibold text-xl'>PRODUCT OFFERING</h3>
           <p>Lorem</p>
           <p>International Shoots</p>
           <p>Occassional Shoots</p>
@@ -1351,7 +1351,7 @@ function Homepage() {
           <p>SFXShoots Travelling</p>
         </div><br />
         <div>
-          <h3>CATCHMYSNAP</h3>
+          <h3 className='font-semibold text-xl'>CATCHMYSNAP</h3>
           <p>About Us</p>
           <p>Investor Relations</p>
           <p>Careers</p>
@@ -1362,7 +1362,7 @@ function Homepage() {
           <p>Partners- Abcdef</p>
         </div><br />
         <div>
-          <h3>ABOUT THIS SITE</h3>
+          <h3 className='font-semibold text-xl'>ABOUT THIS SITE</h3>
           <p>Contact Us</p>
           <p>Payment Security</p>
           <p>Privacy Policy</p>
