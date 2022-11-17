@@ -1246,7 +1246,7 @@ function Homepage() {
         <div className="searchBox flex justify-center">
           {
             wedding ?
-              <div className="weddingSearch text-center p-4 m-6 rounded-xl bg-grey1 shadow-dark-grey shadow-2xl max-w-fit ">
+              <div className="weddingSearch text-center px-14 py-8 m-6 rounded-xl bg-grey1 shadow-dark-grey shadow-2xl max-w-fit ">
                 <div className='p-4 text-lg flex justify-evenly '>
                   <div>
                     <input type="radio" name='shooting-days' onClick={() => { setsingle(true) }} />
