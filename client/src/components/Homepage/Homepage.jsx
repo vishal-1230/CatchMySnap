@@ -1324,7 +1324,7 @@ function Homepage() {
         <img className='w-96 h-40 p-4' src="https://malayweddingservices.com/wp-content/uploads/Haizal-M-Malay-Wedding-photography-discount-coupon-code.jpg" alt="" />
       </div>
       <div className="destinations flex">
-        <h1>Top Destinations for Photoshoots</h1>
+        <h1>Top Destinations for Photoshoots</h1><br />
         {['New Delhi', 'Bangalore', 'Mumbai', 'Chennai', 'Hyderabad', 'Goa', 'Pune', 'Jaipur', 'Pondicherry', 'Kolkata'].map((i) => {
         })}
         <div className="location"><img className='p-4 w-36 rounded-2xl' src="https://pix6.agoda.net/geo/city/14552/1_14552_02.jpg?ca=6&ce=1&s=345x345&ar=1x1" alt="" /><span>New Delhi</span></div>
