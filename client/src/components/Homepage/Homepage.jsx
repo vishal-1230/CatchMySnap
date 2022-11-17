@@ -1,9 +1,7 @@
-import React from 'react'
-import FestivalOutlined from '@mui/icons-material/FestivalOutlined';
-import Hotel from "@mui/icons-material/Hotel";
-import Instagram from "@mui/icons-material/Instagram";
-import HolidayVillage from "@mui/icons-material/HolidayVillage";
-import CorporateFare from "@mui/icons-material/CorporateFare";
+import React, {useState} from 'react'
+import {MdOutlineFestival, MdHolidayVillage, MdOutlineCorporateFare} from 'react-icons/md'
+import { FaHotel } from 'react-icons/fa'
+import { AiFillInstagram } from 'react-icons/ai'
 import Header from './Header'
 import bg from './cms1.png';
 
@@ -1234,20 +1232,31 @@ function Homepage() {
     "Zirakpur",
     "Zunheboto",
   ]
+
+  const [single, setsingle] = useState(true)
+  const [wedding, setwedding] = useState(true)
+
   return (
     <div>
       <Header></Header>
       <div className="searchArea">
         <img className='bgImg w-screen blur-sm' src='https://www.parents.com/thmb/-WzXAufki45bZr9KV9Ptx5r8mZo=/1000x667/filters:fill(auto,1)/shutterstock_286469927-8b82b18bca12479ba7776af8773fed8e.jpg' alt="" />
         <div className='iconDiv'>
-          <div className="wedding"><FestivalOutlined /><span>Wedding Shoots</span></div>
-          <div className="instagram"><Instagram />Instagram Shoots</div>
-          <div className="occassional"><HolidayVillage /><span>Occassional Shoots</span></div>
-          <div className="corporate"><CorporateFare /><span>Corporate Shoots</span></div>
-          <div className="hotelandresorts"><Hotel /><span>Hotels and Resort Shoots</span></div>
+          <div className="wedding" onClick={()=>{setwedding(true)}}><MdOutlineFestival /><span>Wedding Shoots</span></div>
+          <div className="instagram" onClick={()=>{setwedding(false)}}><AiFillInstagram />Instagram Shoots</div>
+          <div className="occassional" onClick={()=>{setwedding(false)}}><MdHolidayVillage /><span>Occassional Shoots</span></div>
+          <div className="corporate" onClick={()=>{setwedding(false)}}><MdOutlineCorporateFare /><span>Corporate Shoots</span></div>
+          <div className="hotelandresorts" onClick={()=>{setwedding(false)}}><FaHotel /><span>Hotels and Resort Shoots</span></div>
         </div>
-            <div className="searchBar">
+            <div className="searchBox">
+              {wedding ? <div className="weddingSearch">
+            <div>
               
+              <input type="radio" name='shooting-days' onClick={()=>{setsingle(true)}} />
+              <label htmlFor="a">Single Day Shoot</label>
+              <input type="radio" name='shooting-days' onClick={()=>{setsingle(false)}} />
+              <label htmlFor="a">Multiple Days Shoot</label>
+            </div>
               <select name="location" id="location">
               <option value="select">Select Location</option>
               {statesList.map((i)=>{
@@ -1256,11 +1265,21 @@ function Homepage() {
               </select>
               <input type="date" name="date" id="date" />
               <button type="submit">SEARCH</button>
-            </div>
-            <div className="feauturesDiv">
+              </div>: <div className="otherSearch">
+              <select name="location" id="location">
+              <option value="select">Select Location</option>
+              {statesList.map((i)=>{
+                return <option value={i}>{i}</option>
+              })}
+              </select>
+              <input type="date" name="date" id="date" />
+              <button type="submit">SEARCH</button>
+              </div>}
               
-            </div>
+              
+              
       </div>
+    </div>
       <div className="bottom">
 
       </div>
