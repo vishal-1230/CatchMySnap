@@ -1277,8 +1277,8 @@ function Homepage() {
               </div>}    
       </div>
     </div>
+    <h1>Top Offers & Dsicounts</h1>
       <div  className='flex flex-row p-6 m-6'>
-        <h1>Top Offers & Dsicounts</h1>
         <img className='w-96 h-40 p-4' src="https://cdn6.agoda.net/images/WebCampaign/wcSP20220307MV/home_banner_web/en-us.png" alt="" />
         <img className='w-96 h-40 p-4' src="https://www.dazzphotography.com/wp-content/uploads/2018/07/Monsoon-Magic-Pune-Photography-Offer.jpg" alt="" />
         <img className='w-96 h-40 p-4' src="https://i0.wp.com/lizscavilla.com/wp-content/uploads/2019/01/FLASH-SALE-50-OFF.png?fit=800%2C800&ssl=1" alt="" />
