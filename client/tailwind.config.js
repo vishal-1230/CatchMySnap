@@ -22,8 +22,16 @@ module.exports = {
       'cms-black':'#050404',
       'white':'#FFFFFF',
       'grey1':'#e1e1e1',
+      'grey2':'#aaa',
+      'grey3':'#777',
+      'grey4':'#555',
       'dark-grey':'#636e72'
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')
+  ],
+  variants: {
+    scrollbar: ['rounded']
+}
 }
