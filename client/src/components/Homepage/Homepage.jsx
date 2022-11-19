@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 import Header from './Header'
 import bg from './cms1.png';
 import './home.css'
-import { Carousel } from 'react-responsive-carousel';
+import Slickslider from './slickslider';
 
 function Homepage() {
   const statesList = [
@@ -1293,7 +1293,9 @@ function Homepage() {
 
         </div>
       </div>
-      <demoCarousel />
+
+      <Slickslider></Slickslider>
+
       <div id="default-carousel" class="relative" data-carousel="static">
         <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
           <div class="hidden duration-700 ease-in-out" data-carousel-item>
