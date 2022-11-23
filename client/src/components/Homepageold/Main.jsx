@@ -60,7 +60,6 @@ export const Main = () => {
               <h4>My Shoots</h4>
               <p>Manage your Bookings</p>
             </div> */}
-            <div className="chooseLanguage" id="google_translate_element"></div>
           </Smallbutton>
           <Smallbutton>
             <div className="smallbuttonpic">

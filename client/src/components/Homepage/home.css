@@ -1,5 +1,129 @@
 .active{
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     border-bottom: #ac0404 2px solid;
     transition-duration: 50ms;
 }
+
+body{
+  /* position: absolute !important; */
+  top: 0 !important;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,600,700&display=swap');
+
+.wrapper{
+  display: inline-flex;
+  background: #fff;
+  height: 90px;
+  width: 75%;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  padding: 20px 15px;
+  /* box-shadow: 5px 5px 30px rgba(0,0,0,0.2); */
+}
+.wrapper .option{
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0 10px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.wrapper .option .dot{
+  height: 20px;
+  /* width: 30px; */
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.dot{
+    width:20px;
+    height: 20px;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #0069d9;
+  /* background: #ac0404; */
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+  border-color: #0069d9;
+  /* border-color: #ac0404; */
+  background: #0069d9;
+  /* background: #ac0404; */
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.wrapper .option span{
+  font-size: 17px;
+  color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span{
+  color: #fff;
+}
+
+.goog-te-gadget-simple {
+  background-color: #6f6f6ffc;
+   border-left: 0px solid#d5d5d5;
+    border-top: 0px solid#9b9b9b;
+     border-bottom: 0px solid#e8e8e8;
+    border-right: 0px solid#d5d5d5;
+   font-size: 7pt;
+  display: inline-block;
+ cursor: pointer;
+   margin-top: 11px;
+  zoom: 1;
+ display: inline;
+ }
+ .goog-te-gadget-icon {
+   margin-left: 2px;
+    width: 1px;
+   height: 0px;
+  border: none;
+ vertical-align: middle;
+ }
+
+ /* #google_translate_element select{
+  background: transparent;
+  color: #0069d9;
+  border-bottom: #555 0.1px solid;
+ } */
+
+ #google_translate_element{
+  outline: none;
+ }
+
+ #google_translate_element select{
+  background: transparent !important;
+  border-bottom: #555 0.1px solid !important;
+  font-family: 'Montserrat' !important;
+  padding-left: 0 !important;
+  outline: none;
+ }
